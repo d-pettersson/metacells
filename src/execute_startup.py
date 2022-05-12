@@ -35,6 +35,7 @@ def onStart():
 	for layer in range(0, find.numRows - 1):
 		connectPars(layer)
 		content.text += '[✓] layer {0} pars connected\n'.format(layer)
+	project.realTime = False
 	return
 
 # initialise by assigning expressions to the individual seeds and loading table_pars

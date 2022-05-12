@@ -1,4 +1,4 @@
-# me - this DAT
+﻿# me - this DAT
 #
 # frame - the current frame
 # state - True if the timeline is paused
@@ -89,10 +89,10 @@ def onPlayStateChange(state):
 	counter = 1
 
 	if isRecording and isPlaying:
-		project.realTime = False
+		#project.realTime = False
 		content.text += 'Render protocol initiated\nTime: {0}\n'.format(datetime.now())
 	else:
-		project.realTime = True
+		#project.realTime = True
 		op('constant_master_seed').par.value0 = 0
 	return
 

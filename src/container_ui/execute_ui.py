@@ -29,9 +29,9 @@ def onFrameStart(frame):
 			counter += 1
 
 		if counter % 3 != 0 and counter % 2 != 0:
-			cachingIndicator.par.Sliderlabelnames = 'caching...1/2'
+			cachingIndicator.par.Sliderlabelnames = 'caching...'
 		if counter % 3 != 0 and counter % 2 == 0:
-			cachingIndicator.par.Sliderlabelnames = 'caching...2/2'
+			cachingIndicator.par.Sliderlabelnames = 'caching...'
 		if counter % 3 == 0:
 			cachingIndicator.par.Sliderlabelnames = 'saving...'
 
